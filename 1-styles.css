@@ -178,7 +178,6 @@ header .nav {
 }
 
 header .logo>img {
-  width: 161px;
   height: 32px;
 }
 
@@ -219,6 +218,7 @@ header .hero-content {
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
+  margin-top: 5px;
 }
 
 .text-sub-heading-1 {
@@ -354,11 +354,25 @@ button.call-to-action span {
     margin-top: 266px;
   }
 
+  .text-heading {
+    margin: 0 9px;
+  }
+  
+  .text-sub-heading {
+    margin: 0 48px;
+    margin-top: 5px;
+  }
+
+  .text-sub-heading-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   button.call-to-action {
     margin-top: 20px;
   }
 
-  .what-we-do > .description {
+  .what-we-do>.description {
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -366,6 +380,12 @@ button.call-to-action span {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+  header .nav {
+    padding-top: 29px;
+    margin-left: 66px;
+    margin-right: 69px;
+  }
+  
   .what-we-do-2 {
     margin: 0 auto;
     margin-top: 97px;
