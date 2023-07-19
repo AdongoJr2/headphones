@@ -1,0 +1,593 @@
+/*==== CSS RESETS ====*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: 0px;
+  cursor: pointer;
+}
+
+/*==== MY CSS ====*/
+@font-face {
+  font-family: Source Sans Pro;
+  src: url("/fonts/SourceSansPro-Regular.ttf");
+}
+
+:root {
+  --primary: #FF6565;
+}
+
+html {
+  font-family: Source Sans Pro;
+  font-style: normal;
+}
+
+header {
+  background-image: url("/images/headphones_hero_1.jpg");
+  background-position: center;
+  height: 800px;
+}
+
+.mobile-top-nav {
+  display: none;
+}
+
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  padding-top: 27.76px;
+  margin-left: 200.61px;
+  margin-right: 199px;
+}
+
+header .logo>img {
+  height: 32px;
+}
+
+header .nav-links {
+  display: inline-flex;
+  height: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 41px;
+  flex-shrink: 0;
+  color: #FFFFFF;
+}
+
+header .nav-links {
+  cursor: pointer;
+}
+
+header .nav-links :hover {
+  color: var(--primary);
+}
+
+header .hero-content {
+  display: flex;
+  justify-content: center;
+  height: 313px;
+  margin-top: 312.24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.text-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-sub-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.text-sub-heading-1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 65px;
+  max-width: 637px;
+}
+
+button.call-to-action {
+  margin-top: 40px;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  border: 0px;
+  background: var(--primary);
+}
+
+button.call-to-action span {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.what-we-do-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.what-we-do {
+  margin-top: 115px;
+  max-width: 637px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.what-we-do>.header-text {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.what-we-do>.description {
+  margin-top: 40px;
+}
+
+.what-we-do-2 {
+  margin-top: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 58px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.sound-frequency .title,
+.video .title,
+.music .title,
+.hearing .title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.sound-frequency .description,
+.video .description,
+.music .description,
+.hearing .description {
+  margin-top: 13px;
+}
+
+.sound-frequency>.title {
+  margin-top: 23.62px;
+}
+
+.video>.title {
+  margin-top: 25.2px;
+}
+
+.music>.title {
+  margin-top: 30.73px;
+}
+
+.hearing>.title {
+  margin-top: 27.56px;
+}
+
+.sound-frequency,
+.video,
+.music,
+.hearing {
+  width: 207px;
+}
+
+.sound-frequency {
+  height: 180px;
+}
+
+.video {
+  height: 193px;
+}
+
+.music {
+  height: 179px;
+}
+
+.hearing {
+  height: 180px;
+}
+
+.our-results {
+  margin-top: 110px;
+  color: #FFF;
+  background: #D8D8D8;
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+}
+
+.our-results .bg {
+  height: 650px;
+}
+
+.our-results .bg img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.our-results>.heading {
+  position: absolute;
+  top: 141px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.our-results>.sub-heading {
+  position: absolute;
+  top: 221px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  width: 637px;
+}
+
+.our-results>.polygons {
+  position: absolute;
+  top: 381px;
+  left: 0;
+  width: 100%;
+}
+
+.polygons>.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 76px;
+  row-gap: 42px;
+}
+
+.pentagon-wrapper,
+.pentagon-wrapper img {
+  width: 190px;
+  height: 190px;
+  position: relative;
+}
+
+.pentagon-wrapper .percentage {
+  position: absolute;
+  top: 70px;
+  left: 51px;
+  text-align: center;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.pentagon-wrapper .text {
+  position: absolute;
+  top: 116px;
+  left: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.contact-us {
+  margin-top: 110px;
+  margin-bottom: 130px;
+}
+
+.contact-us .heading-text {
+  color: #071629;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contact-us form {
+  margin: 0 533px;
+  margin-top: 56px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+}
+
+.form-input label {
+  color: #071629;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form-input input {
+  border: none;
+  border-bottom: 1px solid #071629;
+}
+
+.contact-us .form-input {
+  margin-bottom: 45px;
+}
+
+.contact-us .call-to-action-wrapper {
+  margin-top: calc(56px - 45px);
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us .call-to-action {
+  margin-top: 0px;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mobile-top-nav {
+    display: block;
+    cursor: pointer;
+  }
+
+  header .nav {
+    padding-top: 29px;
+    margin-left: 21px;
+  }
+
+  .logo,
+  .nav-links {
+    display: none !important;
+  }
+
+  header .hero-content {
+    margin-top: 266px;
+  }
+
+  .text-heading {
+    margin: 0 9px;
+  }
+
+  .text-sub-heading {
+    margin: 0 48px;
+    margin-top: 5px;
+  }
+
+  .text-sub-heading-1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  button.call-to-action {
+    margin-top: 20px;
+  }
+
+  .what-we-do>.description {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .our-results .bg,
+  .our-results .bg img {
+    height: 1491px;
+  }
+
+  .our-results>.heading {
+    top: 125px;
+    width: 266px;
+  }
+
+  .our-results>.sub-heading {
+    top: 251px;
+    width: 305px;
+  }
+
+  .our-results>.polygons {
+    top: 536px;
+  }
+
+  .contact-us form {
+    margin: 0 20px;
+    margin-top: 56px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  header .nav {
+    padding-top: 29px;
+    margin-left: 66px;
+    margin-right: 69px;
+  }
+
+  .what-we-do-2 {
+    margin: 0 auto;
+    margin-top: 97px;
+    max-width: 472px;
+    max-height: 469px;
+  }
+
+  .our-results .bg,
+  .our-results .bg img {
+    height: 876px;
+  }
+
+  .our-results>.heading {
+    width: 448px;
+  }
+
+  .our-results>.polygons {
+    top: 401px;
+    left: 0;
+  }
+
+  .polygons>.items {
+    flex-wrap: wrap;
+    margin: 0 56px;
+  }
+
+  .contact-us form {
+    margin: 0 217px;
+    margin-top: 56px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
